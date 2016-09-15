@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    
+    <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+    <script src="lib/js/angular-scroll-animate.js"></script>
+
+
+    <script src="/javascripts/indexAngular.js"></script>
+    <link rel="stylesheet" href="/stylesheets/index.css">
+</head>
+<body ng-app="indexAPP">
+<mynav  ng-controller="scrollHide"></mynav>
+
+<div style="background:url(lib/img/sky.png) no-repeat; background-size: 100%; width: 100vw; padding-top:30vh; padding-left:10vw;padding-right:10vw;">
+    <h1 style="color:white; margin:0; padding:0; width: 50vw;">每天,我们努力让你眼前的世界变得更加美好</h1>
+    <a href="aboutUs.html"><h2 style="color: #b1edff; width: 50vw;">来了解我们的团队</h2></a>
+    <div ng-controller="scrollController" ng-click="goToNextWindow()" class="circle text-center" style="margin: 0 auto; margin-top: 20vh;">
+        <span class="glyphicon glyphicon-chevron-down" aria-hidden="true" style="color: white; margin-top: 18px;"></span>
+    </div>
+</div>
+<br  id="scrollerMarker">
+<div class="container">
+        <div class="row" style="height:50vh;">
+            <div class="col-sm-6 hidden-xs" style="text-align: center;">
+                <img src="lib/img/nounProject/computerTower.png" style="height:50vh;"/>
+            </div>
+            <div class="col-sm-6 col-xs-12" style="text-align: center;padding-top: 12vh;">
+                <h2 style="text-align: center; color: #16364f;">全系列优质设备,无所不能</h2>
+                <p style="color: #16364f; margin:auto; text-align:center; width: 70%">
+                    中源环境提供的设备涵盖气体在线监测,水体在线监测,
+                    数据采集传输,污染源排放过程监控,环境监控管理和环境在线检测等
+                </p>
+                <a href="allProducts2.html"><h4 style="margin-top: 10px; color: #00b5ec;">了解更多</h4></a>
+            </div>
+        </div>
+    <hr>
+    <div class="row" style="height:50vh;">
+        <div class="col-sm-6 col-xs-12" style="text-align: center;padding-top: 12vh;">
+            <h2 style="text-align: center; color: #16364f;">专业化运营服务,懂你所想</h2>
+            <p style="margin:auto; text-align:center; width: 70%;  color: #16364f;">
+                利用在环境监测多年积累的丰富经验，公司积极开展污染源在线监测设施第三方运营服务。
+                专业的运营团队，完善的运营管理制度，合理的运营资源配置，良好的技术开发和运营维护能力，
+                为公司运营服务在客户中赢得了良好的口碑。
+            </p>
+            <a href="management.html"><h4 style="margin-top: 10px; color: #00b5ec;">了解更多</h4></a>
+        </div>
+        <div class="col-sm-6 hidden-xs" style="text-align: center;">
+            <img src="lib/img/nounProject/team.png" style="height:50vh;"/>
+        </div>
+    </div>
+</div>
+
+<myfooter></myfooter>
+</body>
+</html>

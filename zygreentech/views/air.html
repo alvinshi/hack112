@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>气体在线监测</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+
+    <script src="/javascripts/airAngular.js"></script>
+    <link rel="stylesheet" href="/stylesheets/air.css">
+</head>
+<body ng-app="myApp">
+<mynav  ng-controller="scrollHide"></mynav>
+<div style="margin-top: 100px;">
+    <img src="lib/img/smoke.png" style="height: 50vh; display: inline-block">
+    <h1 style="display: inline-block;">ZE-CEM2000稀释抽取法烟气排放连续监测系统</h1>
+</div>
+
+<div style="background-color: #f8f8f8; padding-top: 50px; padding-bottom: 30px;">
+    <p style="width: 80vw; line-height: 200%; margin: auto; text-align: center;">
+        ZE-CEM2000稀释抽取法烟气排放连续监测系统是<span class="em">国内第一批</span>
+        获得国家环保认证合格产品。
+        系统采用<span class="em">高精度</span>的大比例稀释技术，采用紫外荧光法测量SO2浓度、
+        化学发光法测量NOx浓度，适用于电力、水泥、钢铁、石油石化、
+        垃圾焚烧、工业窑炉等行业脱硫系统的效率分析和和工业过程控制监测领域。
+    </p>
+</div>
+
+<h2 style="text-align:center; margin-top: 60px; margin-bottom: 60px;">技术参数</h2>
+
+<table class="table table-striped" style="width: 80vw; margin: auto; padding-bottom: 60px;">
+    <thead>
+        <th>测量参数</th>
+        <th>测量范围</th>
+        <th>线性误差</th>
+        <th>零点漂移</th>
+        <th>跨度漂移</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>SO2</td>
+            <td>0～9999mg/m3</td>
+            <td>±1%</td>
+            <td>±0.5mg /m3/24h</td>
+            <td>±1%/24h</td>
+        </tr>
+        <tr>
+            <td>NO, NO2, NOx</td>
+            <td>0～8000mg/m3</td>
+            <td>±1%</td>
+            <td>±0.5mg /m3/24h</td>
+            <td>±1%/24h</td>
+        </tr>
+        <tr>
+            <td>烟尘</td>
+            <td>0～2000mg/m3</td>
+            <td>绝对误差≤5mg/ m3</td>
+            <td>±2%/24h</td>
+            <td>±2%/24h</td>
+        </tr>
+        <tr>
+            <td>流速</td>
+            <td>0～40m/s</td>
+            <td>±2%</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>温度</td>
+            <td>0～400℃</td>
+            <td>±2℃</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>氧量</td>
+            <td>0～25%℃</td>
+            <td>±2%</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>湿度</td>
+            <td>0～40%℃</td>
+            <td>±2%</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+<div style="background-color: #f8f8f8; margin-top: 30px; padding-top: 30px; padding-bottom: 30px;">
+    <h2 style="text-align:center; margin-bottom: 30px;">方案优势</h2>
+    <div class="row">
+        <div class="col-sm-3 col-xs-6" style="text-align: center;">
+            <img src="lib/img/nounProject/fan.png" style="width: 100px;"/>
+            <h4 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">样气正压传送</h4>
+            <p style="line-height: 200%; width: 60%; margin:auto; margin-top: 30px; text-align: center;">
+                采样管道的微小泄漏不会产生因二次烟气稀释造成的测量误差问题
+            </p>
+        </div>
+        <div class="col-sm-3 col-xs-6" style="text-align: center;">
+            <img src="lib/img/nounProject/no-water.png" style="width: 100px;"/>
+            <h4 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">无冷凝水产生</h4>
+            <p style="line-height: 200%; width: 60%; margin:auto; margin-top: 30px; text-align: center;">
+                避免了酸性凝结水腐蚀管道引起的故障，提高了系统的运行可靠性，降低了运行和维护成本
+            </p>
+        </div>
+        <div class="col-sm-3 col-xs-6" style="text-align: center;">
+            <img src="lib/img/nounProject/sample.png" style="width: 100px;"/>
+            <h4 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">烟气抽取量小（典型值50ml/min)</h4>
+            <p style="line-height: 200%; width: 60%; margin:auto; margin-top: 30px; text-align: center;">
+                过滤器使用寿命长；稀释采样器不易堵塞，维护工作量小，系统稳定性高
+            </p>
+        </div>
+        <div class="col-sm-3 col-xs-6" style="text-align: center;">
+            <img src="lib/img/nounProject/certificate.png" style="width: 100px;"/>
+            <h4 style="text-align: center; margin-top: 30px; margin-bottom: 30px;">满足CEMS76环保新标准</h4>
+            <p style="line-height: 200%; width: 60%; margin:auto; margin-top: 30px; text-align: center;">
+                系统分析仪可同时测量NO、NO2实现NOx监测，无需系统升级可完全满足新标准的要求
+            </p>
+        </div>
+    </div>
+</div>
+
+<div style="margin-top: 30px; padding-top: 30px; padding-bottom: 60px;">
+    <h2 style="text-align:center; margin-bottom: 30px;">应用领域</h2>
+    <div style="padding-left: 25vw;">
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            <h4 style="display: inline-block">
+                广泛应用于水泥工业、化工工业、石化行业、冶金行业等生产过程分析及工艺控制；
+            </h4>
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true"></span>
+            <h4 style="display: inline-block">
+                广泛应用于火电厂、垃圾焚烧厂、工业锅炉窑炉等在线监测。
+            </h4>
+        </div>
+    </div>
+</div>
+
+<myfooter></myfooter>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>污染源排放过程监控</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css">
+    <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.js"></script>
+    <script src="lib/js/bootstrap.min.js"></script>
+    <script src="http://code.angularjs.org/angular-1.0.1.min.js"></script>
+
+    <script src="/javascripts/pollutionAngular.js"></script>
+    <link rel="stylesheet" href="/stylesheets/pollution.css">
+</head>
+<body ng-app="myApp">
+<mynav  ng-controller="scrollHide"></mynav>
+<div style="padding-top: 160px; padding-bottom: 100px;">
+    <h1 style="margin:auto; text-align: center">污染源排放过程（工况）监控系统</h1>
+</div>
+
+<div style="background-color: #f8f8f8; padding-top: 50px; padding-bottom: 30px;">
+    <p style="width: 80vw; line-height: 300%; margin: auto; text-align: center;">
+        <span class="em1">污染源排放过程（工况）监控系统</span>
+        通过对污染治理设施运行状态和各环节参量的实时、
+        连续监测，并结合环境在线监测对排放因子的监测结果，
+        通过运用经过验证的各监测参量间动态关联的逻辑关系，
+        能够<span class="em">精确描述</span>治理设施运行的状态，进行数据
+        <span class="em">验证和判断</span>，
+        对异常工况进行<span class="em">报警</span>。基于验证后的数据，系统可提供各种应用如
+        <span class="em">分析、统计、汇总</span>等。
+    </p>
+    <p style="width: 80vw; line-height: 300%; margin: auto; text-align: center;">
+        系统由<span class="em1">数据采集层、网络传输层、数据中心层、管理平台层和应用表现层</span>构成。
+    </p>
+</div>
+
+<div class="row">
+    <h2 style="text-align:center; margin-top: 30px; margin-bottom: 30px;">应用领域</h2>
+    <div class="col-sm-6 col-xs-12">
+        <h4 style="line-height: 200%; text-align: center;">大型工况系统</h4>
+        <p style="width: 80%; line-height: 300%; margin: auto; text-align: center;">
+            大型污水处理厂、火电行业污染处理设施、
+            化工厂区VOC处理设施的工况在线监管，
+            辅助判断末端监测数据的有效性，可进一步提升监管能力，
+            从末端监控向过程监控演进。
+        </p>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+        <h4 style="line-height: 200%; text-align: center;">小型工况系统</h4>
+        <p style="width: 80%; line-height: 300%; margin: auto; text-align: center;">
+            农村污水处理厂、企业生产用中小锅炉（未安装末端设备）
+            污染处理设施工况在线监管。投入小、效果好，实现该类企业工况监测从无到有的跨越。
+        </p>
+    </div>
+</div>
+
+<div style="background-color: #f8f8f8; padding-top: 30px; padding-bottom: 30px;">
+    <h2 style="text-align:center; margin-bottom: 30px;">方案优势</h2>
+    <div style="margin: auto; width: 450px; text-align: center;">
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-top: 18px;"></span>
+            <h4 style="display: inline-block">根据用户需求灵活配置，大型/小型工况系统可选</h4>
+            <hr class="compressedHr">
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-top: 18px;"></span>
+            <h4 style="display: inline-block">数据采集接口丰富</h4>
+            <hr class="compressedHr">
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-top: 18px;"></span>
+            <h4 style="display: inline-block">电信级数据库</h4>
+            <hr class="compressedHr">
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-top: 18px;"></span>
+            <h4 style="display: inline-block">电信级网管平台，业务扩展灵活</h4>
+            <hr class="compressedHr">
+        </div>
+        <div>
+            <span class="glyphicon glyphicon-ok-circle" aria-hidden="true" style="margin-top: 18px;"></span>
+            <h4 style="display: inline-block">丰富的工况分析功能</h4>
+            <hr class="compressedHr">
+        </div>
+    </div>
+</div>
+
+<myfooter></myfooter>
+</body>
+</html>
